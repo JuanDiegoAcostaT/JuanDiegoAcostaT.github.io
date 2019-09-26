@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RETO animaciones web</title>
+
+    <style>
+
+        body {
+
+            background-color: #CDDCBF;
+        }
+
+.city {
+
+    max-width: 100%;
+    width: 100%; 
+    position: relative;
+}
+
+.cloud {
+
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    animation-name: nube;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: left , background-color ;
+}
+
+
+.cloud1 {
+
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    animation-name: nube1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: left , width;
+}
+
+.cloud2 {
+
+position: absolute;
+top: 150px;
+left: 140px;
+animation-name: nube2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: left;
+}
+
+.cloud3 {
+
+position: absolute;
+top: 30px;
+left:350px;
+animation-name: nube3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: left;
+}
+
+.cloud4 {
+
+position: absolute;
+top: 60px;
+left: 600px;
+animation-name: nube4;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: left;
+}
+
+.cloud5 {
+
+position: absolute;
+top: 30px;
+left: 860px;
+animation-name: nube5;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    will-change: left;
+}
+
+
+.bird {
+
+    position: absolute;
+top: 30px;
+right:  1px;
+
+animation-name: pajaro, rebota;
+    animation-duration: 3s, 1s;
+    /* animation-delay: 1s; */
+    /* transition: 1s; */
+    animation-iteration-count: 2, 6;
+    animation-direction: normal, alternate;
+ /* animation-delay: 1s, 1s; */
+ animation-timing-function: linear, ease-in-out;
+ will-change: left , transform;
+
+}
+
+
+.bird1 {
+
+position: absolute;
+top: 200px;
+left: 1px;
+
+ animation-name: pajaro1, rebota1;
+   /*animation-duration: 3s,1s;
+    animation-iteration-count: infinite;
+    animation-direction:normal, alternate;
+    animation-delay: 5s;
+    animation-timing-function: linear, ease-in-out; */
+    will-change: left , transform;
+
+}
+
+body:hover .car  {
+
+animation-play-state: paused;
+}
+
+body:hover .car1  {
+
+animation-play-state: paused;
+}
+body:hover .car2  {
+
+animation-play-state: paused;
+}
+body:hover .car3  {
+
+animation-play-state: paused;
+}
+
+
+
+
+.car {
+
+    position: absolute;
+bottom: -80px;
+left: 860px;
+animation-name: carro;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    will-change: left;
+
+}
+
+
+.car1 {
+
+position: absolute;
+bottom: -20px;
+left: 140px;
+animation-name: carro1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    will-change: left;
+
+}
+
+.car2 {
+
+position: absolute;
+bottom: -20px;
+left: 400px;
+animation-name: carro2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    will-change: left;
+
+}
+
+.car3 {
+
+position: absolute;
+bottom: -80px;
+left: 600px;
+animation-name: carro3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    will-change: left;
+   
+
+}
+
+@keyframes nube {
+
+    from {
+            left: 2%;
+
+    }
+
+    to {
+
+        background-color: white;
+
+        left: 30%;
+
+        
+        
+
+    }
+
+
+}
+
+@keyframes nube1 {
+
+from {
+        left: 30%;
+
+}
+
+to {
+
+    left: 40%;
+    width: 250px;
+
+}
+
+
+}
+
+@keyframes nube2 {
+
+from {
+        left: 70%;
+
+}
+
+to {
+
+    left: 80%;
+
+}
+
+
+}
+
+@keyframes nube3 {
+
+from {
+        left: 90%;
+
+}
+
+to {
+
+    left: 40%;
+
+}
+
+
+}
+
+@keyframes nube4 {
+
+from {
+        left: 60%;
+
+}
+
+to {
+
+    left: 100%;
+
+}
+
+
+}
+
+@keyframes nube5 {
+
+from {
+        left: 10%;
+
+}
+
+to {
+
+    left: 0%;
+
+}
+
+
+}
+
+
+@keyframes pajaro {
+
+from {
+        left: 100%;
+
+}
+
+
+
+to {
+
+    left: 0%;
+    
+
+}
+ 
+
+
+}
+
+@keyframes rebota {
+
+    from {
+                    transform: translateY(0);
+                }
+
+                to {
+                    transform: translateY(100px) scale(1, .8);
+                }
+
+}
+
+@keyframes pajaro1 {
+
+from {
+        left: 10%;
+
+}
+
+to {
+
+    left: 100%;
+
+}
+
+
+
+
+}
+
+@keyframes rebota1 {
+
+from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(100px) scale(1, .8);
+            }
+
+}
+
+@keyframes carro {
+
+from {
+        left: 90%;
+
+}
+
+to {
+
+    left: -100%;
+
+}
+
+
+}
+
+@keyframes carro1 {
+
+from {
+        left: 10%;
+
+}
+
+to {
+
+    left: 100%;
+
+}
+
+
+}
+
+@keyframes carro2 {
+
+from {
+        left: 10%;
+
+}
+
+to {
+
+    left: 100%;
+
+}
+
+
+}
+
+@keyframes carro3 {
+
+from {
+        left: 90%;
+
+}
+
+to {
+
+    left: -100%;
+
+}
+
+
+}
+
+
+.containerTitle {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    will-change: font-size;
+    
+}
+
+.containerTitle:hover .titulo {
+
+    font-size: 40px;
+}
+
+.containerTitle:hover .titulo1 {
+
+ font-size: 80px;
+}
+
+
+ 
+ 
+ 
+
+    </style>
+</head>
+<body>
+<div class="containerTitle">
+
+        <h2 class="titulo">welcome to</h2>
+        <h1 class="titulo1">Animation City</h1>
+</div>
+ 
+
+<figure>
+    <img src="./images/51838.jpg" alt="" class="city">      
+</figure>
+
+<figure>
+    <img src="./images/nubes.png" alt="" class="cloud" width="150px">
+</figure>
+
+<figure>
+        <img src="./images/nubes.png" alt="" class="cloud1" width="150px">
+    </figure>
+
+    <figure>
+            <img src="./images/nubes.png" alt="" class="cloud2" width="150px">
+        </figure>
+
+        <figure>
+                <img src="./images/nubes.png" alt="" class="cloud3" width="150px">
+            </figure>
+
+            <figure>
+                    <img src="./images/nubes.png" alt="" class="cloud4" width="150px">
+                </figure>
+
+                <figure>
+                        <img src="./images/nubes.png" alt="" class="cloud5" width="150px">
+                    </figure>
+
+                
+                    <figure>
+                        <img src="./images/pajaro1.png" alt="" class="bird" id="bird" width="50px">
+                    </figure>
+
+                    <figure>
+                            <img src="./images/pajaro2.png" alt="" class="bird1" id="bird1" width="50px">
+                        </figure>
+
+
+                        
+        <figure>
+                <img src="./images/carro1.png" alt="" class="car" width="180px">
+            </figure>
+
+            <figure>
+                    <img src="./images/carro2.png" alt="" class="car1" width="180px">
+                </figure>
+
+                <figure>
+                        <img src="./images/carro3.png" alt="" class="car2" width="180px">
+                    </figure>
+
+                    <figure>
+                            <img src="./images/carro4.png" alt="" class="car3" width="180px">
+                        </figure>
+
+                       
+                        
+ <script>
+
+const pajaro1 = document.getElementById('bird');
+const pajaro2 = document.getElementById('bird1');
+
+
+pajaro1.addEventListener('animationend', (event) => {
+
+
+    if (event.animationName === 'rebota') {
+
+// console.log('holi');
+        pajaro2.style.animationName = 'pajaro1 , rebota1'
+        pajaro2.style.animationDuration = '3s , 1s'
+        pajaro2.style.animationIterationCount = 'infinite'
+        pajaro2.style.animationDirection = 'normal, alternate'
+        pajaro2.style.animationDelay = '5s'
+        pajaro2.style.animationTimingFunction = 'linear , ease-in-out'
+         pajaro1.style.animationIterationCount = 'infinite';
+          /*animation-duration: 3s,1s;
+    animation-iteration-count: infinite;
+    animation-direction:normal, alternate;
+    animation-delay: 5s;
+    animation-timing-function: linear, ease-in-out; */
+
+    }
+});
+
+
+ </script>           
+        
+    
+</body>
+</html>
